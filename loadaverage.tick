@@ -1,0 +1,7 @@
+stream
+        |from()
+            .database('lug')
+            .measurement('system')
+        |alert()
+            .crit(lambda: "load1" >  0.70)
+            .log('/tmp/alerts.log')
