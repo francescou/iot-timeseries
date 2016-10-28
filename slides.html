@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>TSDBs for the Internet of Things</title>
+
+		<link rel="stylesheet" href="slides/css/reveal.css">
+		<link rel="stylesheet" href="slides/css/theme/white.css" id="theme">
+
+        <link rel="stylesheet" href="slides/lib/css/zenburn.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section data-markdown="slides/slides.md" data-separator="^--$" data-separator-vertical="^\n\n"></section>
+
+            </div>
+		</div>
+
+		<script src="slides/lib/js/head.min.js"></script>
+		<script src="slides/js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'slides/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'slides/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'slides/js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'slides/js/notes.js' }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
